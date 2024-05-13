@@ -108,7 +108,7 @@ namespace rviz_birdeye_display::displays {
             return;
         }
         setTransformOk();
-
+        position.z -= 0.5;
         scene_node_->setPosition(position);
         scene_node_->setOrientation(orientation);
 
